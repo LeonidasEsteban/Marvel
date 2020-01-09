@@ -1,0 +1,24 @@
+/* resetear estilos de los navegadores*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    min-height: 52px;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.menu-mobile img{
+    fill:white;
+}
+
+.marvel-logo{
+    display:flex;
+    align-items: center;
+}
