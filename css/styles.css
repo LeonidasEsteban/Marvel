@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: 400 16px/1.3 Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font: 400 16px/1.3 Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
 }
 .header{
     min-height: 52px;
