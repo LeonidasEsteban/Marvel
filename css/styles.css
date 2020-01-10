@@ -5,6 +5,9 @@
     margin: 0;
 }
 
+body{
+    font-family: 400 16px/1.3 Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
 .header{
     min-height: 52px;
     background-color: #202020;
@@ -21,4 +24,19 @@
 .marvel-logo{
     display:flex;
     align-items: center;
+}
+
+.owl-item{
+    margin:0!important; 
+}
+.info{
+    background-color: #202020;
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.info h2{
+    font-weight:900;
+    margin-bottom: 16px;
 }
