@@ -26,9 +26,6 @@ body{
     align-items: center;
 }
 
-.owl-item{
-    margin:0!important; 
-}
 .info{
     background-color: #202020;
     color: white;
