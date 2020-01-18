@@ -72,21 +72,29 @@ body{
     text-align: center;
 }
 
-
+.content{
+    display:flex;
+    flex-wrap: wrap;
+}
 .content > .img +.img{
     padding:20px;
 }
 
 .img{
     background-color: #202020;
+    min-width: 100%;
 }
 
 .img img{
     max-width: 100%;
 }
-.img p{
+.img p, .img h2{
     color:white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.img h2{
+    text-transform: uppercase;
 }
 .dark{
     background-color:#202020;
@@ -102,3 +110,77 @@ body{
 .buttons a{
     margin-right: 15px;
 }
+
+
+.thumbs ul{
+    display:flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    list-style: none;
+    overflow-x: auto;
+    max-width:1240px;
+    padding:30px 15px 80px 15px;
+}
+
+.thumbs li{
+    min-width: 33%;
+    max-width: 33%;
+    margin:0 10px;
+}
+
+.thumbs img{
+    max-width:100%;
+}
+.thumbs ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .thumbs ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  /* Handle */
+  .thumbs ::-webkit-scrollbar-thumb {
+    background: #e62429;
+    width:3px;
+  }
+
+  .thumbs h3{
+    text-transform: uppercase;
+    color: #e62429;
+    margin-bottom: 10px;
+  }
+
+  .thumbs h4{
+    font-weight: 400;
+  }
+
+  .thumbs h3, .thumbs h4{
+      font-size: 14px;
+  }
+
+  .no-border{
+      border:0;
+  }
+
+  .banners-new .img{
+      width: 50%;
+  }
+
+  .banners-new h3{
+      text-transform: capitalize;
+      color: white;
+      margin-bottom: 20px;
+      font-weight: 400;
+  }
+  .background-banner{
+      background-image: url('../img/mu_base_set_dsk_02.jpg');
+      background-size: cover;
+      min-height: 300px;
+      padding: 40px;
+  }
+
+  .banners-new .more{
+      width: 50%;
+  }
