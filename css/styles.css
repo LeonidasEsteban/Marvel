@@ -76,6 +76,8 @@ body{
     display:flex;
     flex-wrap: wrap;
 }
+
+
 .content > .img +.img{
     padding:20px;
 }
@@ -88,6 +90,7 @@ body{
 .img img{
     max-width: 100%;
 }
+
 .img p, .img h2{
     color:white;
     margin-bottom: 10px;
@@ -153,11 +156,15 @@ body{
   }
 
   .thumbs h4{
-    font-weight: 400;
+    font-weight:600;
+  }
+
+  .thumbs h4:hover{
+    color:#e62429;
   }
 
   .thumbs h3, .thumbs h4{
-      font-size: 14px;
+      font-size: 16px;
   }
 
   .no-border{
@@ -179,8 +186,16 @@ body{
       background-size: cover;
       min-height: 300px;
       padding: 40px;
+      background-position: top;
   }
 
+  .background-banner-hero{
+    background-image: url('../img/disneyplusall_base_set_02.png');
+    background-size: cover;
+    min-height: 300px;
+    padding: 40px;
+    background-position: top;
+}
   .banners-new .more{
       width: 50%;
   }
@@ -197,6 +212,11 @@ body{
     overflow-x:auto;
     transition: 0.5s;
     padding-top: 60px;
+  }
+
+  .activeMenu{
+      width:100%!important;
+      transition: 0.5s all ease-in-out;
   }
 
   .sidenav a {
@@ -223,3 +243,31 @@ body{
     margin-left: 50px;
     z-index:10;
   }
+
+  @media (min-width: 601px){
+    .activeMenu{
+        max-width: 371px!important;
+    }
+}
+
+@media (min-width: 800px){
+    .content{
+        flex-wrap: nowrap;
+    }
+
+    .img{
+        width:50%;
+        position:relative;
+        min-width:50%;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .thumbs li{
+        min-width: 23%;
+        width:23%;
+        margin:0 10px;
+    }
+}
